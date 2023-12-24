@@ -24,7 +24,7 @@ jobs:
                       > Command | Description
                       > --- | ---
                       > /hello | echo world
-                  reaction-type: heart
+                  reactions: heart
 
             - name: Hello Jarvis
               uses: peter-evans/create-or-update-comment@v3
@@ -35,4 +35,4 @@ jobs:
                   comment-id: ${{ github.event.client_payload.github.payload.comment.id }}
                   body: |
                       world!
-                  reaction-type: laugh
+                  reactions: laugh
